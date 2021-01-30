@@ -9,7 +9,7 @@ RUN apk add --no-cache -U \
   
 WORKDIR /server
 
-RUN wget https://launcher.mojang.com/v1/objects/35139deedbd5182953cf1caa23835da59ca3d7cd/server.jar -p /server
+RUN wget https://launcher.mojang.com/v1/objects/35139deedbd5182953cf1caa23835da59ca3d7cd/server.jar -P /server
 
 COPY server.properties /server
 COPY eula.txt /server

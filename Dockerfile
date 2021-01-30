@@ -14,5 +14,6 @@ RUN wget https://launcher.mojang.com/v1/objects/35139deedbd5182953cf1caa23835da5
 COPY server.properties /server
 COPY eula.txt /server
 COPY ops.txt /server
+COPY start.sh /server
 
 CMD ["bash", "/server/start.sh"]

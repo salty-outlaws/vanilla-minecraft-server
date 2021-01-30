@@ -15,4 +15,4 @@ COPY server.properties /server
 COPY eula.txt /server
 COPY ops.txt /server
 
-CMD ["java", "-Xmx1024M", "-Xms512M", "-jar server.jar", "nogui"]
+CMD ["bash", "/server/start.sh"]
